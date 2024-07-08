@@ -57,10 +57,10 @@ main .filter a {
     text-decoration: none;
 }
 main .filter a:hover {
-    border-bottom: 3px solid #ddb497;
+    border-bottom: 3px solid #FEF6F1;
 }
 main .filter a:focus {
-    border-bottom: 3px solid #ddb497;
+    border-bottom: 3px solid #FEF6F1;
 }
 .perfumes {
     display: inline-flex;
@@ -78,7 +78,7 @@ main .filter a:focus {
     width: 80px;
     height: 110px;
     padding: 5px;
-    background-color: #ffe7f3;
+    background-color: #FEF6F1;
     border-radius: 10px;
     margin: 0 10px;
 }
