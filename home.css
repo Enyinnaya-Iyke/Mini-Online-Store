@@ -5,7 +5,7 @@ body {
     font-size: 13px;
     line-height: 1.5;
 }
-nav {
+nav .top {
     display: flex;
     padding: 10px;
     margin: 10px 5px;
@@ -56,12 +56,18 @@ main .filter a {
     color: black;
     text-decoration: none;
 }
+main .filter a:hover {
+    border-bottom: 3px solid #ddb497;
+}
 main .filter a:focus {
-    border-bottom: 5px solid #ddb497;
+    border-bottom: 3px solid #ddb497;
 }
 .perfumes {
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .perfumes .products {
     width: fit-content;
@@ -113,16 +119,107 @@ main .filter a:focus {
     border-radius: 5px;
     font-size: 8px;
 }
-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    nav .bars {
+        display: none;
+    }
+    footer .footer-left {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    footer .socials h3 {
+        display: inline;
+    }
+    
+footer .infos {
+    display: none;
 }
-footer .socials h3 {
-    display: inline;
+    
 }
-.perfumes {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+
+@media only screen and (min-width: 768px) {
+
+    nav {
+        padding: 10px 30px;
+        background-color: #ecd7c7;
+    }
+    nav .nav-left a i {
+        display: none;
+    }
+    nav .nav-left label input {
+        width: 200%;
+    }
+    nav .nav-left label i {
+        position: absolute;
+        left: 180%;
+        bottom: 10%;
+        transform: translateX(-100%);
+    }
+    nav .bars {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    nav .bars a {
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    nav .bars a:hover {
+        background-color: #ffffff;
+    }
+    main {
+        margin: 10px 30px;
+    }
+    main h1 {
+        margin: 20px 35%;
+    }
+    main .filter {
+        margin: auto 10%;
+    }
+    .perfumes {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .perfumes .products img {
+        width: 120px;
+        height: 150px;
+    }
+    .perfumes .products .add span {
+        border: 3px solid #71360C;
+        border-radius: 5px;
+        width: 50%;
+        margin: 5px;
+    }
+    .perfumes .products .add button {
+        height: 50%;
+    }
+    footer {
+        display: inline-flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        background-color: #ddb497;
+    }
+    footer .infos {
+        width: 15%;
+        font-size: 14px;
+        line-height: normal;
+    }
+    footer .infos a {
+        text-decoration: none;
+    }
+    footer .infos a:hover {
+        text-decoration: underline;
+    }
+
 }
