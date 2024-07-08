@@ -2,13 +2,13 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
 }
 nav {
     display: flex;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 5px;
     justify-content: space-between;
 }
 nav .nav-left {
@@ -17,7 +17,7 @@ nav .nav-left {
 }
 i {
     padding: 10px;
-    font-size: 24px;
+    font-size: 22px;
 }
 a {
     color: black;
@@ -36,10 +36,10 @@ nav .nav-left label i {
 }
 
 main {
-    margin: 30px;
+    margin: 30px 5px;
 }
 main h1 {
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
 }
 main h1 span {
@@ -47,7 +47,7 @@ main h1 span {
 }
 main .filter {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
@@ -65,10 +65,12 @@ main .filter a:focus {
 }
 .perfumes .products {
     width: fit-content;
+    position: relative;
+    margin-top: 30px;
 }
 .perfumes .products img {
-    width: 100px;
-    height: 150px;
+    width: 80px;
+    height: 110px;
     padding: 5px;
     background-color: #ffe7f3;
     border-radius: 10px;
@@ -83,16 +85,21 @@ main .filter a:focus {
 }
 .perfumes .products .add {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -20px;
 }
 .perfumes .products .add span {
     border: 3px solid #71360C;
     border-radius: 5px;
-    width: 20%;
+    width: 30%;
     margin: 5px;
 }
 .perfumes .products .add span button {
     border: none;
     color: black;
+    padding: 0;
     background: transparent;
 }
 .perfumes .products .add span input {
@@ -102,10 +109,10 @@ main .filter a:focus {
 .perfumes .products .add button {
     background-color: #71360C;
     color: white;
+    height: 30%;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 8px;
 }
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -113,4 +120,9 @@ footer {
 }
 footer .socials h3 {
     display: inline;
+}
+.perfumes {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
