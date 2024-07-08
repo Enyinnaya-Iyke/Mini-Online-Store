@@ -1,0 +1,116 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+nav {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+nav .nav-left {
+    display: flex;
+    justify-content: space-between;
+}
+i {
+    padding: 10px;
+    font-size: 24px;
+}
+a {
+    color: black;
+}
+nav .nav-left label {
+    position: relative;
+}
+nav .nav-left label input {
+    padding: 10px;
+    border-radius: 3px;
+    width: 80%;
+}
+nav .nav-left label i {
+    position: absolute;
+    right: 20%;
+}
+
+main {
+    margin: 30px;
+}
+main h1 {
+    font-size: 24px;
+    text-align: center;
+}
+main h1 span {
+    color: #71360C;
+}
+main .filter {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+main .filter a {
+    color: black;
+    text-decoration: none;
+}
+main .filter a:focus {
+    border-bottom: 5px solid #ddb497;
+}
+.perfumes {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.perfumes .products {
+    width: fit-content;
+}
+.perfumes .products img {
+    width: 100px;
+    height: 150px;
+    padding: 5px;
+    background-color: #ffe7f3;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.perfumes .products .caption {
+    margin: 5px;
+}
+.perfumes .products .caption p {
+    margin: 0;
+    width: fit-content;
+}
+.perfumes .products .add {
+    display: flex;
+}
+.perfumes .products .add span {
+    border: 3px solid #71360C;
+    border-radius: 5px;
+    width: 20%;
+    margin: 5px;
+}
+.perfumes .products .add span button {
+    border: none;
+    color: black;
+    background: transparent;
+}
+.perfumes .products .add span input {
+    width: 10%;
+    border: none;
+}
+.perfumes .products .add button {
+    background-color: #71360C;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+footer .socials h3 {
+    display: inline;
+}
