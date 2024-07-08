@@ -25,7 +25,7 @@ img {
     width: 120px;
     height: 150px;
     padding: 5px;
-    background-color: #ffe7f3;
+    background-color: #FEF6F1;
     border-radius: 10px;
 }
 main {
@@ -80,7 +80,7 @@ footer .checkout i {
     padding: 0;
 }
 footer .checkout #view-cart {
-    background-color: #ffe7f3;
+    background-color: #FEF6F1;
 }
 footer .checkout #checkout {
     color: white;
