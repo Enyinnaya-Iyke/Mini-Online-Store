@@ -201,8 +201,6 @@ footer .infos {
     footer {
         display: inline-flex;
         justify-content: space-around;
-        position: fixed;
-        bottom: 0;
         width: 100%;
         padding-top: 20px;
         padding-bottom: 10px;
