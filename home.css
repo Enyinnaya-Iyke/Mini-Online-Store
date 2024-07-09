@@ -143,7 +143,7 @@ footer .infos {
 @media only screen and (min-width: 768px) {
 
     nav {
-        padding: 10px 30px;
+        padding: 10px;
         background-color: #FEF6F1;
     }
     nav .nav-left a i {
@@ -203,6 +203,8 @@ footer .infos {
         justify-content: space-around;
         width: 100%;
         padding-top: 10px;
+        margin-bottom: 0;
+        padding-bottom: 0;
         margin-top: 50px;
         border-top-left-radius: 100px;
         border-top-right-radius: 100px;
