@@ -144,7 +144,7 @@ footer .infos {
 
     nav {
         padding: 10px 30px;
-        background-color: #ecd7c7;
+        background-color: #FEF6F1;
     }
     nav .nav-left a i {
         display: none;
@@ -206,7 +206,7 @@ footer .infos {
         margin-top: 50px;
         border-top-left-radius: 100px;
         border-top-right-radius: 100px;
-        background-color: #ddb497;
+        background-color: #FEF6F1;
     }
     footer .infos {
         width: 15%;
