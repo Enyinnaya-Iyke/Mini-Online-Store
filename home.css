@@ -120,7 +120,7 @@ main .filter a:focus {
     font-size: 8px;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     nav .bars {
         display: none;
     }
